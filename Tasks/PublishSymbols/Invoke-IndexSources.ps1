@@ -343,7 +343,7 @@ try {
             break
         }
         default {
-            Write-Warning (Get-LocalizedString -Key 'Only TfsGit and TfsVersionControl source providers are supported for source indexing. Repository type: {0}' -ArgumentList $repoType)
+            Write-Warning (Get-LocalizedString -Key 'Only TfsGit and TfsVersionControl source providers are supported for source indexing. Repository type: {0}' -ArgumentList $provider)
             Write-Warning (Get-LocalizedString -Key 'Unable to index sources.')
             return
         }
